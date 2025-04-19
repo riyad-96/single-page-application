@@ -15,10 +15,10 @@ function createLiElement(id, name) {
   const a = document.createElement("a")
   a.href = `./user/index.html?id=${id}`
   a.textContent = name
-  
+
   const del = document.createElement("button")
   del.textContent = "Delete"
-  del.classList.add('project-delete-btn')
+  del.classList.add("project-delete-btn")
   del.onclick = () => deleteProject(id, li)
 
   li.appendChild(a)
@@ -55,7 +55,7 @@ function savePageToLocal() {
 
 create.addEventListener("click", savePageToLocal)
 input.addEventListener("keydown", (e) => {
-  if(e.key === 'Enter') {
+  if (e.key === "Enter") {
     e.preventDefault()
     savePageToLocal()
   }

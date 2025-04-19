@@ -1,11 +1,11 @@
-@font-face{
-  font-family: 'poppins';
-  src: url('./poppins-v21-latin-400.woff2') format('woff2');
+@font-face {
+  font-family: "poppins";
+  src: url("./poppins-v21-latin-400.woff2") format("woff2");
 }
 
 body {
   margin: 0;
-  font-family: 'poppins';
+  font-family: "poppins";
   padding: 1rem;
 }
 
@@ -15,7 +15,6 @@ input {
   font-size: 1.125rem;
   margin-block-end: 0.5rem;
 }
-
 
 input {
   padding: 0.5rem;
