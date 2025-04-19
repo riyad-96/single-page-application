@@ -3,6 +3,10 @@
   src: url("./poppins-v21-latin-400.woff2") format("woff2");
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "poppins";
@@ -18,15 +22,64 @@ input {
 
 input {
   padding: 0.5rem;
+  width: 250px;
+  border-radius: 0.425rem;
+  border: 1px solid #b3b3b3;
+  outline: none;
+  outline-offset: 2px;
+
+  &:focus,
+  &:focus-visible{
+    outline: 1px solid #b6b6b6;
+  }
 }
 
+.create,
+.create-open{
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-inline-end: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 0.435rem;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+
+
+  li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    border: 1px solid #b3b3b3;
+    margin-block: 0.525rem;
+    border-radius: 0.345rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #1b0a29;
+    flex-grow: 1;
+    padding-inline-start: 1rem;
+    padding-block: 0.5rem;
+  }
+}
+
+
 .project-delete-btn {
+  height: 100%;
   border: none;
   border-radius: 0.3rem;
   background-color: rgb(255, 86, 86);
   color: white;
-  /* font-family: inherit; */
   padding: 0.325rem 0.5rem;
   margin-inline-start: 1rem;
+  margin-inline-end: 0.5rem;
   cursor: pointer;
 }

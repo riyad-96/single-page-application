@@ -3,6 +3,10 @@
   src: url("./poppins-v21-latin-400.woff2") format("woff2");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 1rem;
@@ -17,4 +21,15 @@ textarea {
 textarea {
   font-family: cursive;
   font-size: 1.125rem;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-inline-end: 0.5rem;
+  margin-block-start: 0.5rem;
+  background-color: #e0e0e0;
+  border-radius: 0.435rem;
+  cursor: pointer;
 }
