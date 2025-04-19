@@ -12,7 +12,7 @@ h1.textContent = currentProject.name
 
 saveBtn.addEventListener('click', () => {
   const code = textarea.value
-  localStorage.setItem('project-' + urlId, JSON.stringify(code))
+  localStorage.setItem('project-' + urlId, code)
 })
 
 const savedCode = localStorage.getItem('project-' + urlId)
