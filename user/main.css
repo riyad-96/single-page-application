@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+  padding: 1rem;
+  font-family: Poppins;
+}
+
+label,
+textarea {
+  display: block;
+}
+
+textarea{
+  font-family: cursive;
+  font-size: 1.125rem;
+}
